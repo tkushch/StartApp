@@ -7,23 +7,26 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
 android:background="@android:color/black">
-    <com.example.startapp.MySurfaceView
+    <com.example.startapp.MyDraw
+            android:elevation="2dp"
 
             android:layout_width="match_parent" android:layout_height="match_parent"
                                         android:layout_marginBottom="60dp"
                                         app:layout_constraintTop_toTopOf="parent"
                                         app:layout_constraintStart_toStartOf="parent"
                                         app:layout_constraintBottom_toBottomOf="parent"
-                                        app:layout_constraintEnd_toEndOf="parent" android:id="@+id/mySurfaceView"
+                                        app:layout_constraintEnd_toEndOf="parent" android:id="@+id/myDraw"
                                         app:layout_constraintHorizontal_bias="0.0"
                                         app:layout_constraintVertical_bias="0.0"/>
-    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                 android:layout_margin="5dp"
-                 android:id="@+id/fl"
-                 android:background="@android:color/white"
-                 app:layout_constraintBottom_toBottomOf="parent"
-                 app:layout_constraintTop_toBottomOf="@+id/mySurfaceView" app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintStart_toStartOf="parent">
+    <FrameLayout
+            android:elevation="1dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/fl"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myDraw" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
         <Button
                 android:background="@android:color/black"
                 android:textColor="@android:color/white"
@@ -32,7 +35,7 @@ android:background="@android:color/black">
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/button"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/mySurfaceView" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myDraw" app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
     </FrameLayout>
 
